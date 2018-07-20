@@ -3,8 +3,18 @@
 	<meta name="author" content="osu!fx Team">
 	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
 	<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
 	<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </head>
 <body>
+	<!-- Use snpy framework:tm: to generate triangle elements into div -->
+	<div class="container-fluid background" data-snpy="trianglegen" data-snpyargs="32-54|31,70,178-105,24,240"></div>
+	<div class="container">
+		<div class="snpy-circle">
+			<a href="#" role="button">
+				<!--<img src="{ url_for('static', filename='img/logo.png') }">-->
+			</a>
+		</div>
+	</div>
 </body>

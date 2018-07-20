@@ -2,3 +2,36 @@
 	background-color: #4829B2 !important;
 	height:100%;
 }
+
+.snpy-circle {
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,.6);
+}
+
+.snpy-triangle {
+	position:fixed;
+	font-size: 0px; line-height: 0%; width: 0px;
+	border-bottom: 20px solid #00f;
+	border-left: 10px solid #0000;
+	border-right: 10px solid #0000;
+}
+
+.snpy-float {
+	transform: translateY(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-20px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
