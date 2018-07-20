@@ -7,14 +7,29 @@
 	<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </head>
-<body>
+<body class="text-white">
 	<!-- Use snpy framework:tm: to generate triangle elements into div -->
-	<div class="container-fluid background" data-snpy="trianglegen" data-snpyargs="32-54|31,70,178-105,24,240"></div>
-	<div class="container">
-		<div class="snpy-circle">
+	<div class="container-fluid background" data-snpy="trianglegen" data-snpyargs="32-54|31,70,178-105,24,240">
+		
+	</div>
+	<div class="container h-100">
+		<!--<div class="snpy-circle">
 			<a href="#" role="button">
-				<!--<img src="{ url_for('static', filename='img/logo.png') }">-->
+				<img src="{ url_for('static', filename='img/logo.png') }">
 			</a>
+		</div>-->
+		<div class="row align-items-center h-100">
+			<div class="col-6 mx-auto">
+				{LOGO}
+				<hr class="snpy-hr">
+				<h2>What is this?</h2>
+				<p class="lead">
+					This is an osu! storyboard and beatmap editor in the browser.
+					You can generate complex beatmaps with the help of modules that are freely available on this site.
+				</p>
+				<a class="btn btn-primary" href="#" role="button">Open tool</a>
+				<a class="btn btn-secondary" href="#" role="button"><i class="fa fa-github pr-1"></i>Github</a>
+			</div>
 		</div>
 	</div>
 </body>

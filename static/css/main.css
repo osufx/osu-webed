@@ -1,6 +1,8 @@
 .background {
+	position:fixed;
 	background-color: #4829B2 !important;
 	height:100%;
+	z-index: -1;
 }
 
 .snpy-circle {
@@ -9,6 +11,12 @@
 	border-radius: 50%;
 	overflow: hidden;
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,.6);
+}
+
+.snpy-hr {
+	border: 0;
+	height: 4px;
+	background-image: linear-gradient(to right, #fff0, #fffa, #fff0);
 }
 
 .snpy-triangle {
